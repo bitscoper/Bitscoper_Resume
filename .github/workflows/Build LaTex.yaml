@@ -5,6 +5,7 @@ on:
       - main
 jobs:
   build_latex:
+    name: Build LaTeX
     permissions:
       contents: write
     runs-on: ubuntu-latest
@@ -12,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build Article
+      - name: Build LaTex
         uses: hspaans/latexmk-action@v2.0.0
         with:
           filename: Resume.tex
