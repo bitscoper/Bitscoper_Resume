@@ -1,0 +1,30 @@
+# By Abdullah As-Sadeed
+
+name: Build LaTeX
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build_latex:
+    name: Build LaTeX
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.1
+
+      - name: Build LaTex
+        uses: hspaans/latexmk-action@v2.1.1
+        with:
+          filename: Resume.tex
+          format: pdf
+          options: -cd -pdf -synctex=1 -interaction=nonstopmode -file-line-error
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1.20.0
+        with:
+          artifacts: Resume.pdf
+          tag: "Latest"
+          token: ${{ secrets.GITHUB_TOKEN }}
