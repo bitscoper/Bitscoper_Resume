@@ -4,6 +4,7 @@
 
 Resume of Abdullah As-Sadeed
 
+[![No AI](https://raw.githubusercontent.com/nuxy/no-ai-badge/master/badge.svg)](https://github.com/bitscoper/Bitscoper_Resume#notes)
 [![Build Latex](https://github.com/bitscoper/Bitscoper_Resume/actions/workflows/Build%20LaTex.yaml/badge.svg)](https://github.com/bitscoper/Bitscoper_Resume/actions/workflows/Build%20LaTex.yaml)
 
 </div>
@@ -16,3 +17,4 @@ Resume of Abdullah As-Sadeed
 
 - I write commit messages in Title Case and past tense, leaving out articles to keep them concise while still showing details.
 - I reuploaded the repository to clean up the commit history, but this is unlikely to happen again.
+- I later PGP-signed all my commits, so they show a later date.
